@@ -1,0 +1,141 @@
+@use '../base/variaveis' as *;
+
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &__content {
+        background-image: url(../../assets/images/quiet-place-banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+        background-color: red;
+        padding: 2rem;
+        border-radius: 1rem;
+        color: $colorWhite;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .main__buttons {
+            display: flex;
+            gap: 1rem;
+
+            button {
+                padding: 0.75rem 1.5rem;
+                border: none;
+                border-radius: 1.5rem;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    &__aside {
+
+        .aside__poster {
+            width: 100%;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+            aspect-ratio: 3 / 2;
+        }
+    }
+}
+
+.info-block {
+    margin-bottom: 1.5rem;
+
+    &__title {
+        font-size: 1rem;
+        color: $colorGray;
+        margin-bottom: 0.25rem;
+    }
+
+    &__content {
+        font-size: 1rem;
+        margin-top: .8rem;
+        color: $colorWhite;
+    }
+
+    &__tags {
+        margin-top: .5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    &__ratings {
+        display: flex;
+        gap: 1rem;
+
+        .rating {
+            background-color: $secondaryColor;
+            margin-top: .5rem;
+            padding: 1rem 1rem;
+            width: 100%;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: $colorWhite;
+
+            &__change {
+                color: #4caf50;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.tag {
+    background-color: $tagBackground;
+    padding: 0.4rem 0.8rem;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    color: $colorWhite;
+    text-transform: capitalize;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: $secondaryColor;
+    padding: .5rem;
+    border-radius: 10px;
+
+    &__photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    &__info {
+        .profile__name {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: $colorWhite;
+        }
+
+        .profile__country {
+            font-size: 0.75rem;
+            color: $colorGray;
+        }
+    }
+}

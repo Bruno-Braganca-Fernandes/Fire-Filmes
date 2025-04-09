@@ -2,6 +2,9 @@
 @use 'base/reset.scss';
 @use 'base/variaveis.scss';
 
+// componentes
+@use 'components/tags';
+
 // layout
 @use 'layout/header.scss';
 @use 'layout/main'

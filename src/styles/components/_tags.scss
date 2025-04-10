@@ -28,4 +28,13 @@
         background-color: $tagCategorie;
         border: 1px solid $borderColor;
     }
+
+    &--trending {
+        background-color: rgba(255, 255, 255, 0.116);
+        border: 1px solid $borderColor;
+        font-weight: bold;
+        display: inline-flex;
+        margin-bottom: 8rem;
+    }
+
 }

@@ -1,6 +1,5 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
-const imagemin = require('gulp-imagemin')
 
 function styles() {
     return gulp.src('./src/styles/main.scss')
@@ -8,7 +7,8 @@ function styles() {
         .pipe(gulp.dest('./dist/css'))
 }
 
-function images() {
+async function images() {
+    const imagemin = (await import("gulp-imagemin")).default
     return gulp.src('./src/assets/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'))

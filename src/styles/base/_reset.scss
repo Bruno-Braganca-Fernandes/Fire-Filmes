@@ -9,4 +9,6 @@
 body {
     font-family: $fontMain;
     background-color: $primaryColor;
+    overflow-x: hidden;
+    width: 100%;
 }

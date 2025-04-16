@@ -4,7 +4,10 @@
 
 // componentes
 @use 'components/tags';
+@use 'components/suggestions';
+@use 'components/info-block';
 
 // layout
 @use 'layout/header.scss';
-@use 'layout/main'
+@use 'layout/main';
+@use 'layout/aside';

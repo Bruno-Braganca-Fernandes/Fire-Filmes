@@ -1,0 +1,26 @@
+@use '../base/variaveis' as *;
+
+.main__aside {
+    width: 100%;
+    height: fit-content;
+    background-color: $primaryColor;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    .aside__poster {
+        width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        object-fit: cover;
+        aspect-ratio: 3 / 2;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.726);
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__aside {
+        margin-top: 2rem;
+    }
+}

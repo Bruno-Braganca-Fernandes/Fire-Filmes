@@ -1,0 +1,54 @@
+@use '../base/variaveis' as *;
+
+.suggestions {
+    margin-top: 7rem;
+
+    &__title {
+        font-size: 1.6rem;
+        color: $colorWhite;
+        margin-bottom: 1.2rem;
+        font-weight: 300;
+    }
+
+    &__carousel {
+        display: flex;
+        gap: 1.5rem;
+        padding-bottom: 1rem;
+        overflow-x: auto;
+    }
+}
+
+.suggestion-card {
+    flex: 0 0 auto;
+    width: 160px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: $secondaryColor;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &__poster {
+        width: 100%;
+        height: 240px;
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .suggestions {
+        &__carousel {
+            gap: 1rem;
+
+            .suggestion-card {
+                width: 140px;
+
+                &__poster {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

@@ -5,6 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+
+    @media (max-width: 768px) {
+        padding-bottom: 1.5rem;
+    }
 }
 
 .tag {
